@@ -58,3 +58,20 @@
   }());
   ```
 
+### *Experience:*
+
+* Feb 2019 – now. TapMedia_LLC. HTML/CSS Developer
+* Oct 2017 – Feb 2019. TapMedia_LLC. Technical Support
+* May 2018 – Nov 2018. TapMedia_LLC. System Administrator
+
+### *Education:*
+
+* 2011 – 2017 Odessa National
+Telecommunications Academy
+Telecommunication technologies
+and equipment.
+Master's degree
+
+### *English:*
+
+<p>Level Intermediate. I have enough practical experience communicating with native speakers as technical support engineer.</p>
