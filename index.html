@@ -6,8 +6,114 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My CV</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="container">
+
+    <header>
+      <h1>Maksym Ovchynnikov</h1>
+      <figure class="cv-photo">
+        <img src="https://pmcdeadline2.files.wordpress.com/2016/08/zach-braff-3.jpg?w=681&h=383&crop=1" alt="zakk">
+        <figcaption>photo</figcaption>
+      </figure>
+    </header>
+
+    <hr>
+
+    <main>
+      <section class="contacts">
+        <h3>My contacts</h3>
+        <ul>
+          <li>098-13-44-320</li>
+          <li>maxim170894@gmail.com</li>
+          <li>live:maxim170894</li>
+          <li><a href="https://www.linkedin.com/in/maksym-ovchynnikov-962568150" target="_blanc">linkedin</a></li>
+        </ul>
+      </section>
+
+      <section class="about">
+        <h3>Self-presentation</h3>
+        <p>My name is Maksym Ovchynnikov, and i want to improve my skills in web development. I have a few years of experience working with web technologies and have extensive background of computer literacy</p>
+      </section>
+
+      <section class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Mobile First</li>
+          <li>Bootstrap</li>
+          <li>Webpack</li>
+          <li>JavaScrypt</li>
+          <li>jQuery</li>
+        </ul>
+      </section>
+
+      <section class="code">
+        <h3>Code examples</h3>
+        <pre>
+        (function() {
+            // Theme switch
+            let themeSwitch = document.getElementById('themeSwitch');
+
+            if(themeSwitch) {
+              initTheme(); // if user has already selected a specific theme -> apply it
+              themeSwitch.addEventListener('change', function(event){
+                resetTheme(); // update color theme
+              });
+
+              function initTheme() {
+                let darkThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+                // update checkbox
+                themeSwitch.checked = darkThemeSelected;
+                // update body data-theme attribute
+                darkThemeSelected ? document.body.classList.add('white-content') : document.body.classList.remove('white-content');
+                darkThemeSelected ? document.body.setAttribute('data', 'blue') : document.body.removeAttribute('data');
+              };
+
+              function resetTheme() {
+                if(themeSwitch.checked) { // dark theme has been selected
+                  document.body.classList.add('white-content');
+                  document.body.setAttribute('data', 'blue');
+                  localStorage.setItem('themeSwitch', 'dark');
+                } else {
+                  document.body.classList.remove('white-content');
+                  document.body.removeAttribute('data');
+                  localStorage.removeItem('themeSwitch');
+                } 
+              };
+            }
+          }());
+        </pre>
+      </section>
+
+      <section class="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li>Feb 2019 – now. TapMedia_LLC. HTML/CSS Developer</li>
+          <li>Oct 2017 – Feb 2019. TapMedia_LLC. Technical Support</li>
+          <li>May 2018 – Nov 2018. TapMedia_LLC. System Administrator</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h3>Education</h3>
+        <ul>
+          <li>2011 – 2017 Odessa National
+              Telecommunications Academy
+              Telecommunication technologies
+              and equipment.
+              Master's degree</li>
+        </ul>
+      </section>
+
+      <section class="english">
+        <h3>English</h3>
+        <p>Level Intermediate. I have enough practical experience communicating with native speakers as technical support engineer.</p>
+      </section>
+      
+    </main>
+  </div>
 </body>
 </html>
